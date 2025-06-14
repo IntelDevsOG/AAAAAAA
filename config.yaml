@@ -1,0 +1,23 @@
+# config.yaml
+discord_token: "YOUR_DISCORD_BOT_TOKEN"
+
+admin_roles:
+  - 123456789012345678  # Admin Role ID
+
+user_roles:
+  - 987654321098765432  # Role allowed to use VPS commands
+
+vps_defaults:
+  storage: local-lvm
+  template: local:vztmpl/debian-12.0-standard_20230518_amd64.tar.zst
+  cores: 1
+  memory: 512
+  disk: 8
+  net_bridge: vmbr0
+  password: changeme
+  gateway: 192.168.1.1
+  nameserver: 1.1.1.1
+  start_vmid: 2000
+
+sshx_path: /usr/bin/sshx
+
